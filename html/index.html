@@ -4,12 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive navigation Bar</title>
-    <link rel="stylesheet" href="index.css">
-
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <nav>
-        <img src="./image-asset.png"/>
+        <input type="checkbox" id="check"/>
+        <label for="check" onclick="name(this)">
+            <i class="fa-solid fa-bars"id='btn'></i>
+            <i class="fas fa-times" id="cancel"></i>
+        </label>
+        <img src="../img/image-asset.png"/>
        <ul>
           <li><a href='#'>Home</a></li>
           <li><a href='#'>About</a></li>
@@ -18,5 +24,10 @@
           <li><a href='#'>Feedback</a></li>
        </ul>
     </nav>
+    <script>
+        function name() {
+          x.ul.name('change')           
+        }
+    </script>
 </body>
 </html>
